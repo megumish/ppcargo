@@ -3,13 +3,9 @@
 #[macro_use]
 extern crate clap;
 
-use clap::{App, AppSettings, Arg, SubCommand};
+mod cli;
 
 /// main routine
 fn main() {
-    let app = App::new(crate_name!())
-        .setting(AppSettings::DeriveDisplayOrder)
-        .version(crate_version!())
-        .author(crate_authors!())
-        .about(crate_description!());
+    let matches = cli::build_cli().get_matches();
 }
