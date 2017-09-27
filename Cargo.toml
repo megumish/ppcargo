@@ -2,5 +2,7 @@
 name = "ppcargo"
 version = "0.1.0"
 authors = ["Keishi Kawada <Kk-shli@outlook.jp>"]
+description = "Tools for ppc(programming professional and coding)"
 
 [dependencies]
+clap = "2.20.3"
